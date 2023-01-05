@@ -3,28 +3,28 @@ import { Link, link } from "react-scroll"
 import { FaTimes, FaBars } from "react-icons/fa"
 
 const Navbar = () => {
-  // let links = [
-  //   {
-  //     id: 1,
-  //     link: "Home",
-  //   },
-  //   {
-  //     id: 2,
-  //     link: "About",
-  //   },
-  //   {
-  //     id: 3,
-  //     link: "Education & Skills",
-  //   },
-  //   {
-  //     id: 4,
-  //     link: "Projects",
-  //   },
-  //   {
-  //     id: 5,
-  //     link: "Contact me",
-  //   },
-  // ];
+  let links = [
+    {
+      id: 1,
+      link: "Home",
+    },
+    {
+      id: 2,
+      link: "About",
+    },
+    {
+      id: 3,
+      link: "Projects",
+    },
+    {
+      id: 4,
+      link: "Experience",
+    },
+    {
+      id: 5,
+      link: "Contact",
+    },
+  ];
 
   const [nav, setNav] = useState(false)
 
@@ -34,19 +34,14 @@ const Navbar = () => {
         <h1 className="text-5xl font-signature ml-2 mt-3 hover:text-orange-400 duration-500"><a href="#">Prathamesh</a></h1>
       </div>
 
+
       <ul className='hidden md:flex'>
+        {
+          links.map(({ id, link }) => {
+            return <li key={id} className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-orange-500 duration-200"><Link to={link} smooth duration={500}>{link}</Link></li>
 
-        <li className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-orange-500 duration-200"><Link to="home" smooth duration={500}>Home</Link></li>
-
-        <li className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-orange-500 duration-200"><Link to="about" smooth duration={500}>About</Link></li>
-
-        <li className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-orange-500 duration-200"><Link to="project" smooth duration={500}>Projects</Link></li>
-
-        <li className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-orange-500 duration-200"><Link to="experience" smooth duration={500}>Experience</Link></li>
-
-
-        <li className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-orange-500 duration-200"><Link to="contact" smooth duration={500} >Contact </Link></li>
-
+          })
+        }
       </ul>
 
       <div onClick={() => { setNav(!nav) }}
@@ -58,19 +53,11 @@ const Navbar = () => {
       {nav && (
 
         <ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500'>
-
-          <li className="px-4 cursor-pointer capitalize text-3xl py-5 hover:scale-105 hover:text-orange-500 duration-200"><Link to='home' smooth duration={500}>Home</Link></li>
-
-          <li className="px-4 cursor-pointer capitalize text-3xl py-5 hover:scale-105 hover:text-orange-500 duration-200"><Link to='about' smooth duration={500}>About</Link></li>
-
-          <li className="px-4 cursor-pointer capitalize text-3xl py-5 hover:scale-105 hover:text-orange-500 duration-200"><Link to='project' smooth duration={500}>Projects</Link></li>
-
-          <li className="px-4 cursor-pointer capitalize text-3xl py-5 hover:scale-105 hover:text-orange-500 duration-200"><Link to='experience' smooth duration={500}>Experience</Link></li>
-
-
-          <li className="px-4 cursor-pointer capitalize text-3xl py-5 hover:scale-105 hover:text-orange-500 duration-200"><Link to='contact' smooth duration={500}>Contact</Link></li>
-
-
+          {
+            links.map(({ id, link }) => {
+              return <li key={id} className="px-4 cursor-pointer capitalize text-3xl py-5 hover:scale-105 hover:text-orange-500 duration-200"><Link onClick={() => { setNav(!nav) }} to={link} smooth duration={500}>{link}</Link></li>
+            })
+          }
         </ul>
       )}
 

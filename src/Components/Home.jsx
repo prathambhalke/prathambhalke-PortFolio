@@ -7,7 +7,7 @@ import Hero from "../assets/Hero1.jpg"
 const Home = () => {
 
     return (
-        <div name="home" className='w-full pt-12 h-screen
+        <div name="Home" className='w-full pt-12 sm:h-screen
          bg-gradient-to-b from-black to-gray-800 via-black'>
 
             <div className='max-w-screen-md mx-auto flex flex-col items-center justify-center h-full px-4 sm:flex-row sm:ml-12 md:mx-auto'>

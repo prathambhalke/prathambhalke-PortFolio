@@ -1,10 +1,148 @@
 import React from "react";
-import { FaBootstrap, FaCss3, FaHtml5, FaNode, FaReact } from "react-icons/fa";
+import { FaBootstrap, FaCss3, FaHtml5, FaReact } from "react-icons/fa";
 import { SiExpress, SiFigma, SiGit, SiGithub, SiJavascript, SiNodedotjs, SiRedux, SiTailwindcss } from 'react-icons/si'
 
 const EdSkill = () => {
+
+    const skills = [
+        {
+            id: 1,
+            name: "HTML",
+            shadow: "text-orange-600",
+            shadow1:"shadow-orange-600",
+            style: (
+                <>
+                    <FaHtml5 size={80} />
+                </>
+            )
+        },
+        {
+            id: 2,
+            name: "CSS",
+            shadow: "text-blue-500",
+            shadow1:"shadow-blue-500",
+            style: (
+                <>
+                    <FaCss3 size={80} />
+                </>
+            )
+        },
+        {
+            id: 3,
+            name: "JavaScript",
+            shadow: "text-yellow-600",
+            shadow1:"shadow-yellow-600",
+            style: (
+                <>
+                    <SiJavascript size={80} />
+                </>
+            )
+        },
+        {
+            id: 4,
+            name: "React",
+            shadow: "text-blue-600",
+            shadow1:"shadow-blue-600",
+            style: (
+                <>
+                    <FaReact size={80} />
+                </>
+            )
+        },
+        {
+            id: 5,
+            name: "Redux",
+            shadow: "text-purple-500",
+            shadow1:"shadow-purple-500",
+            style: (
+                <>
+                    <SiRedux size={80} />
+                </>
+            )
+        },
+        {
+            id: 6,
+            name: "Node Js",
+            shadow: "text-green-500",
+            shadow1:"shadow-green-500",
+            style: (
+                <>
+                    <SiNodedotjs size={80} />
+                </>
+            )
+        },
+        {
+            id: 7,
+            name: "Express",
+            shadow: "text-gray-600",
+            shadow1:"shadow-gray-600",
+            style: (
+                <>
+                    <SiExpress size={80} />
+                </>
+            )
+        },
+        {
+            id: 8,
+            name: "BootStrap",
+            shadow: "text-purple-500",
+            shadow1:"shadow-purple-500",
+            style: (
+                <>
+                    <FaBootstrap size={80} />
+                </>
+            )
+        },
+        {
+            id: 9,
+            name: "Tailwind",
+            shadow: "text-blue-500",
+            shadow1:"shadow-blue-500",
+            style: (
+                <>
+                    <SiTailwindcss size={80} />
+                </>
+            )
+        },
+        {
+            id: 10,
+            name: "Git",
+            shadow: "text-orange-500",
+            shadow1:"shadow-orange-500",
+            style: (
+                <>
+                    <SiGit size={80} />
+                </>
+            )
+        },
+        {
+            id: 11,
+            name: "GitHub",
+            shadow: "text-gray-600",
+            shadow1:"shadow-gray-600",
+            style: (
+                <>
+                    <SiGithub size={80} />
+                </>
+            )
+        },
+        {
+            id: 12,
+            name: "Figma",
+            shadow: "text-pink-600",
+            shadow1:"shadow-pink-600",
+            style: (
+                <>
+                    <SiFigma size={80} />
+                </>
+            )
+        },
+
+
+    ]
+
     return (
-        <div name="experience" className="w-full h-screen py-[30%] bg-gradient-to-b from-gray-800 to-black text-white">
+        <div name="Experience" className="w-full sm:h-screen md:h-screen sm:py-[40%] pt-[15%] bg-gradient-to-b from-gray-800 to-black text-white">
 
             <div className="max-w-screen-lg p-2 mx-auto flex flex-col justify-center w-full h-full text-white">
 
@@ -19,91 +157,17 @@ const EdSkill = () => {
 
                 <div className="w-full grid grid-cols-2 sm:grid-cols-6 gap-8 text-center py-8 px-12 sm:px-0">
 
-                <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-orange-500 ">
-                        <li className="m-5 w-20 mx-auto text-orange-600"><FaHtml5 size={80} /></li>
-                        <p className="mt-4">
-                            HTML
-                        </p>
-                    </div>
+                    {
+                        skills.map(({ id, name, shadow, shadow1, style }) => {
 
-                    <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-500 ">
-                        <li className="m-5 w-20 mx-auto text-blue-500"><FaCss3 size={80} /></li>
-                        <p className="mt-4">
-                            CSS
-                        </p>
-                    </div>
-
-                    <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-yellow-500 ">
-                        <li className="m-5 w-20 mx-auto text-yellow-600"><SiJavascript size={80} /></li>
-                        <p className="mt-4">
-                            JavaScript
-                        </p>
-                    </div>
-
-                    <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-600 ">
-                        <li className="m-5 w-20 mx-auto text-blue-600"><FaReact size={80} /></li>
-                        <p className="mt-4">
-                            React
-                        </p>
-                    </div>
-
-                    <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-purple-500 ">
-                        <li className="m-5 w-20 mx-auto text-purple-600"><SiRedux size={80} /></li>
-                        <p className="mt-4">
-                            Redux
-                        </p>
-                    </div>
-
-                    <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-green-500">
-                        <li className="m-5 w-20 mx-auto text-green-600"><SiNodedotjs size={80} /></li>
-                        <p className="mt-4">
-                            Node Js
-                        </p>
-                    </div>
-
-                    <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-gray-500 ">
-                        <li className="m-5 w-20 mx-auto text-gray-600"><SiExpress size={80} /></li>
-                        <p className="mt-4">
-                            Express Js
-                        </p>
-                    </div>
-
-                    <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-purple-500 ">
-                        <li className="m-5 w-20 mx-auto text-purple-500"><FaBootstrap size={80} /></li>
-                        <p className="mt-4">
-                            BootStrap
-                        </p>
-                    </div>
-
-                    <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-500 ">
-                        <li className="m-5 w-20 mx-auto text-blue-500"><SiTailwindcss size={80} /></li>
-                        <p className="mt-4">
-                            Tailwind
-                        </p>
-                    </div>
-
-                    <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-orange-500 ">
-                        <li className="m-5 w-20 mx-auto text-orange-500"><SiGit size={80} /></li>
-                        <p className="mt-4">
-                            Git
-                        </p>
-                    </div>
-
-                    <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-gray-500 ">
-                        <li className="m-5 w-20 mx-auto text-gray-500"><SiGithub size={80} /></li>
-                        <p className="mt-4">
-                            GitHub
-                        </p>
-                    </div>
-
-                    <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-pink-500 ">
-                        <li className="m-5 w-20 mx-auto text-pink-500"><SiFigma size={80} /></li>
-                        <p className="mt-4">
-                            Figma
-                        </p>
-                    </div>
-
-                
+                          return  <div key={id} className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${shadow1}`}>
+                                <li className={`m-5 w-20 mx-auto ${shadow}`}>{style}</li>
+                                <p className="mt-4">
+                                    {name}
+                                </p>
+                            </div>
+                        })
+                    }
 
 
                 </div>

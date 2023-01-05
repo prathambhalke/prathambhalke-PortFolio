@@ -1,7 +1,7 @@
 import React from 'react'
 const Contact = () => {
     return (
-        <div name="contact" className='w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 pt-96 py-[50%] text-white'>
+        <div name="Contact" className='w-full sm:h-screen bg-gradient-to-b from-black to-gray-800 p-4 pt-24  text-white'>
 
             <div className='flex flex-col p-4 justify-center max-w-lg mx-auto h-full'>
 
