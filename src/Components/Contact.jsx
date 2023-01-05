@@ -1,7 +1,77 @@
 import React from 'react'
+
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { AiOutlineMail } from 'react-icons/ai'
+import { BsPersonLinesFill } from 'react-icons/bs'
+
 const Contact = () => {
+
+    let social = [
+        {
+            id: 1,
+            color: "bg-blue-600",
+            child: (
+                <>
+                    <FaLinkedin size={30} className="ml-2 text-white" />
+                </>
+            ),
+            link: "https://www.linkedin.com/in/prathamesh-bhalke-174b90226"
+        },
+        {
+            id: 2,
+            color: "bg-gray-600",
+            child: (
+                <>
+                    <FaGithub size={30} className="ml-2 text-white" />
+                </>
+            ),
+            link: "https://github.com/prathambhalke"
+        },
+        {
+            id: 3,
+            color: "bg-red-600",
+            child: (
+                <>
+                    <AiOutlineMail size={30} className="ml-2 text-white" />
+                </>
+            ),
+            link: "mailto:bhalkeprathamesh11@gmail.com"
+        },
+        {
+            id: 4,
+            color: "bg-blue-500",
+            child: (
+                <>
+                    <FaTwitter size={30} className="ml-2 text-white" />
+                </>
+            ),
+            link: "https://twitter.com/prathambhalke"
+        },
+        {
+            id: 5,
+            color: "bg-green-500",
+            child: (
+                <>
+                    <BsPersonLinesFill size={30} className="ml-2 text-white" />
+                </>
+            ),
+            link: "/Resume_Prathamesh_Bhalke_Frontend_Web_Developer.pdf"
+        }
+    ]
+
     return (
         <div name="Contact" className='w-full sm:h-screen bg-gradient-to-b from-black to-gray-800 p-4 pt-24  text-white'>
+
+            <div className=" md:hidden flex justify-center items-center bottom-[35%]">
+                <ul className='flex justify-center items-center' >
+                    {
+                        social.map(({ id, color, child, link }) => {
+                            return <li key={id} className={`flex justify-center items-center h-1/1 mt-[-10%] py-3 px-2  hover:rounded-md hover:mt-[-15%] duration-500 ${color} cursor-pointer`}><a className='flex text-white font-bold' href={link} download="true" target="_blank" >{child}</a></li>
+
+                        })
+                    }
+                </ul>
+            </div>
 
             <div className='flex flex-col p-4 justify-center max-w-lg mx-auto h-full'>
 
@@ -48,6 +118,10 @@ const Contact = () => {
                     </form>
 
                 </div>
+
+            </div>
+
+            <div>
 
             </div>
 
