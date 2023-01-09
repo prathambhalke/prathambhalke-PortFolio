@@ -60,7 +60,7 @@ const Contact = () => {
     ]
 
     return (
-        <div name="Contact" className='w-full sm:h-screen bg-gradient-to-b from-black to-gray-800 p-4 pt-24  text-white'>
+        <div name="Contact" className='w-full sm:h-screen bg-gradient-to-b from-gray-800 to-black text-white p-4 pt-24'>
 
             <div className=" md:hidden flex justify-center items-center bottom-[35%]">
                 <ul className='flex justify-center items-center' >
