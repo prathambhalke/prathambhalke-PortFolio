@@ -53,7 +53,7 @@ const SocialLinks = () => {
                     Resume <BsPersonLinesFill size={30} className="ml-2 text-white" />
                 </>
             ),
-            link: "/Resume_Prathamesh_Bhalke_Frontend_Web_Developer.pdf"
+            link: "https://drive.google.com/file/d/1gdk64-GwRa_p3rarr4RlXm0ZUSwGZ2RQ/view?usp=share_link"
         }
     ]
     return (
