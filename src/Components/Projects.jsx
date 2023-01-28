@@ -26,11 +26,17 @@ const Projects = () => {
       demoLink: "https://prathams-spotify.netlify.app",
       codeLink: "https://github.com/prathambhalke/Spotify-Clone",
     },
+    // {
+    //   id: 4,
+    //   image: SnakeGame,
+    //   demoLink: "https://glowing-profiterole-a5e3e6.netlify.app",
+    //   codeLink: "https://github.com/prathambhalke/Snake_game",
+    // },
     {
       id: 4,
-      image: SnakeGame,
-      demoLink: "https://glowing-profiterole-a5e3e6.netlify.app",
-      codeLink: "https://github.com/prathambhalke/Snake_game",
+      image: "GAPP-Trendz (E-Com)",
+      demoLink: "https://gapptrendzz.netlify.app/",
+      codeLink: "https://github.com/amanmulani09/gapp-trendzz",
     },
     {
       id: 5,
