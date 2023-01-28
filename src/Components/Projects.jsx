@@ -2,7 +2,8 @@ import React from "react";
 import PortFolio from "../assets/PortFoilo.png";
 import ViteKart from "../assets/ViteKart.png";
 import Spotify from "../assets/Spotify.png";
-import SnakeGame from "../assets/SnakeGame.png";
+// import SnakeGame from "../assets/SnakeGame.png";
+import GAPP from "../assets/GAPP.png";
 import WhetherApp from "../assets/WhetherApp.png";
 import ShadowGen from "../assets/ShadowGen.png";
 
@@ -34,7 +35,7 @@ const Projects = () => {
     // },
     {
       id: 4,
-      image: "GAPP-Trendz (E-Com)",
+      image: GAPP,
       demoLink: "https://gapptrendzz.netlify.app/",
       codeLink: "https://github.com/amanmulani09/gapp-trendzz",
     },
