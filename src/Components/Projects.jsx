@@ -2,52 +2,60 @@ import React from "react";
 import PortFolio from "../assets/PortFoilo.png";
 import ViteKart from "../assets/ViteKart.png";
 import Spotify from "../assets/Spotify.png";
-// import SnakeGame from "../assets/SnakeGame.png";
+import SnakeGame from "../assets/SnakeGame.png";
 import GAPP from "../assets/GAPP.png";
 import WhetherApp from "../assets/WhetherApp.png";
+import BrickBreak from "../assets/BrickBreak.png";
 import ShadowGen from "../assets/ShadowGen.png";
 
 const Projects = () => {
   const projects = [
     {
       id: 1,
-      image: PortFolio,
-      demoLink: "#",
-      codeLink: "https://github.com/prathambhalke/prathambhalke-PortFolio",
-    },
-    {
-      id: 2,
       image: ViteKart,
       demoLink: "#",
       codeLink: "https://github.com/prathambhalke/Vite-Kart",
     },
     {
-      id: 3,
-      image: Spotify,
-      demoLink: "https://prathams-spotify.netlify.app",
-      codeLink: "https://github.com/prathambhalke/Spotify-Clone",
+      id: 2,
+      image: PortFolio,
+      demoLink: "#",
+      codeLink: "https://github.com/prathambhalke/prathambhalke-PortFolio",
     },
-    // {
-    //   id: 4,
-    //   image: SnakeGame,
-    //   demoLink: "https://glowing-profiterole-a5e3e6.netlify.app",
-    //   codeLink: "https://github.com/prathambhalke/Snake_game",
-    // },
     {
-      id: 4,
+      id: 3,
       image: GAPP,
       demoLink: "https://gapptrendzz.netlify.app/",
       codeLink: "https://github.com/amanmulani09/gapp-trendzz",
     },
     {
+      id: 4,
+      image: Spotify,
+      demoLink: "https://prathams-spotify.netlify.app",
+      codeLink: "https://github.com/prathambhalke/Spotify-Clone",
+    },
+    {
       id: 5,
+      image: SnakeGame,
+      demoLink: "https://glowing-profiterole-a5e3e6.netlify.app",
+      codeLink: "https://github.com/prathambhalke/Snake_game",
+    },
+
+    {
+      id: 6,
+      image: BrickBreak,
+      demoLink: "https://brickbreaker-by-prathamesh.netlify.app",
+      codeLink: "https://github.com/prathambhalke/Brick_Breaker-master",
+    },
+    {
+      id: 7,
       image: WhetherApp,
       demoLink:
         "https://codesandbox.io/s/github/prathambhalke/Whether-App-React",
       codeLink: "https://github.com/prathambhalke/Whether-App-React",
     },
     {
-      id: 6,
+      id: 8,
       image: ShadowGen,
       demoLink:
         "https://codesandbox.io/s/github/prathambhalke/Box-Shadow-Generator",
@@ -69,7 +77,7 @@ const Projects = () => {
           <p className="py-6">Check out some of my work right here</p>
         </div>
 
-        <div className="grid sm-grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+        <div className="grid sm-grid-cols-2 md:grid-cols-4 gap-8 px-12 sm:px-0">
           {projects.map(({ id, image, demoLink, codeLink }) => {
             return (
               <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
