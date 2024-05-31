@@ -13,7 +13,7 @@ const SocialLinks = () => {
                     Linkedin <FaLinkedin size={30} className="ml-2 text-white" />
                 </>
             ),
-            link: "https://www.linkedin.com/in/prathamesh-bhalke-174b90226"
+            link: "https://www.linkedin.com/in/prathameshb11"
         },
         {
             id: 2,
@@ -53,7 +53,7 @@ const SocialLinks = () => {
                     Resume <BsPersonLinesFill size={30} className="ml-2 text-white" />
                 </>
             ),
-            link: "https://drive.google.com/file/d/1_zW7gJXN7zsQKexVpwEhK79vJkeAeAA7/view?usp=sharing"
+            link: "https://drive.google.com/file/d/1n65gJbXbO1LS18M9wQdrJqJg_5hWrWZ4/view?usp=sharing"
         }
     ]
     return (

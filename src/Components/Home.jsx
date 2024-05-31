@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-scroll";
 import { FaArrowRight } from "react-icons/fa";
 
-import Hero from "../assets/Hero2.jpg";
+import Hero from "../assets/Hero3.jpg";
 
 const Home = () => {
   return (
@@ -47,8 +47,8 @@ const Home = () => {
         <div>
           <img
             src={Hero}
-            alt="Hero"
-            className="rounded-2xl mx-auto w-2/3 sm:w-2/3 md:w-2/3 md:mx-auto"
+            alt="profile image"
+            className="rounded-2xl mx-auto w-2/4 my-12 sm:w-2/3 md:w-full md:mx-auto"
           />
         </div>
       </div>

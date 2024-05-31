@@ -18,44 +18,31 @@ const Projects = () => {
     },
     {
       id: 2,
-      image: PortFolio,
-      demoLink: "#",
-      codeLink: "https://github.com/prathambhalke/prathambhalke-PortFolio",
-    },
-    {
-      id: 3,
       image: GAPP,
       demoLink: "https://gapptrendzz.netlify.app/",
       codeLink: "https://github.com/amanmulani09/gapp-trendzz",
     },
     {
-      id: 4,
+      id: 3,
       image: Spotify,
       demoLink: "https://prathams-spotify.netlify.app",
       codeLink: "https://github.com/prathambhalke/Spotify-Clone",
     },
     {
-      id: 5,
+      id: 4,
       image: SnakeGame,
       demoLink: "https://glowing-profiterole-a5e3e6.netlify.app",
       codeLink: "https://github.com/prathambhalke/Snake_game",
     },
 
     {
-      id: 6,
+      id: 5,
       image: BrickBreak,
       demoLink: "https://brickbreaker-by-prathamesh.netlify.app",
       codeLink: "https://github.com/prathambhalke/Brick_Breaker-master",
     },
     {
-      id: 7,
-      image: WhetherApp,
-      demoLink:
-        "https://codesandbox.io/s/github/prathambhalke/Whether-App-React",
-      codeLink: "https://github.com/prathambhalke/Whether-App-React",
-    },
-    {
-      id: 8,
+      id: 6,
       image: ShadowGen,
       demoLink:
         "https://codesandbox.io/s/github/prathambhalke/Box-Shadow-Generator",
@@ -77,7 +64,7 @@ const Projects = () => {
           <p className="py-6">Check out some of my work right here</p>
         </div>
 
-        <div className="grid sm-grid-cols-2 md:grid-cols-4 gap-8 px-12 sm:px-0">
+        <div className="grid sm-grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
           {projects.map(({ id, image, demoLink, codeLink }) => {
             return (
               <div key={id} className="shadow-md shadow-gray-600 rounded-lg">

@@ -14,7 +14,7 @@ const Contact = () => {
           <FaLinkedin size={30} className="ml-2 text-white" />
         </>
       ),
-      link: "https://www.linkedin.com/in/prathamesh-bhalke-174b90226",
+      link: "https://www.linkedin.com/in/prathameshb11",
     },
     {
       id: 2,
@@ -54,7 +54,7 @@ const Contact = () => {
           <BsPersonLinesFill size={30} className="ml-2 text-white" />
         </>
       ),
-      link: "https://drive.google.com/file/d/1gdk64-GwRa_p3rarr4RlXm0ZUSwGZ2RQ/view?usp=share_link",
+      link: "https://drive.google.com/file/d/1n65gJbXbO1LS18M9wQdrJqJg_5hWrWZ4/view?usp=sharing",
     },
   ];
 
